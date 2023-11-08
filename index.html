@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>poppii</title>
-</head>
-<body>
-    <script type="text/javascript">
-        function mudar(objeto,imagem) {
-            rato.src=imagem;
-        }
-      </script>
-    <a onmouseover="mudar('rato', 'rato.webp')"
-      onmouseout="mudar('rato', 'rato2.jpg')">
-      <img src="rato2.jpg" id="rato"></a> 
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Sim ou Não</title>
+  </head>
+  <body>
+    <div class="card" id="card">
+      <div class="question" id="question">
+        <p>voce me ama?</p>
+        <div class="buttons">
+          <button id="yes" class="btn-yes">Sim!</button>
+          <button id="no" class="btn-no">Não</button>
+        </div>
+      </div>
+
+      <div class="answer" id="answer">
+        <p>Eu sabia! Te amo</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
